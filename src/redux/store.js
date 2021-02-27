@@ -21,7 +21,7 @@ const reduser = (state = initialState, action) => {
             return {
                 ...state, // распылим, чтоб ничего не потерять
                 counter: {
-                    ...state.counter,
+                    ...state.counter, // распылим сюда step, и изменим value 
                     value: state.counter.value + action.payload,
                 }
             }

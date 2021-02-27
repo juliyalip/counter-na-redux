@@ -15,8 +15,8 @@ const Counter = ({ value, onIncrement, onDecrement, step }) => {
 
             <Value value={ value}/>
             <ButtonControls
-                onIncrement={onIncrement}
-                onDecrement={onDecrement}
+                onIncrement={() => onIncrement(step)}
+                onDecrement={() => onDecrement(step)}
                 step={step} />
         </div>
     )
