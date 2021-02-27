@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/counter-na-redux/static/css/main.3964a91b.chunk.css",
-    "main.js": "/counter-na-redux/static/js/main.c066f1a6.chunk.js",
-    "main.js.map": "/counter-na-redux/static/js/main.c066f1a6.chunk.js.map",
+    "main.css": "/counter-na-redux/static/css/main.4b791bfa.chunk.css",
+    "main.js": "/counter-na-redux/static/js/main.6ed773a6.chunk.js",
+    "main.js.map": "/counter-na-redux/static/js/main.6ed773a6.chunk.js.map",
     "runtime-main.js": "/counter-na-redux/static/js/runtime-main.2de9086f.js",
     "runtime-main.js.map": "/counter-na-redux/static/js/runtime-main.2de9086f.js.map",
-    "static/js/2.f48e1be2.chunk.js": "/counter-na-redux/static/js/2.f48e1be2.chunk.js",
-    "static/js/2.f48e1be2.chunk.js.map": "/counter-na-redux/static/js/2.f48e1be2.chunk.js.map",
+    "static/js/2.5536bdaa.chunk.js": "/counter-na-redux/static/js/2.5536bdaa.chunk.js",
+    "static/js/2.5536bdaa.chunk.js.map": "/counter-na-redux/static/js/2.5536bdaa.chunk.js.map",
     "index.html": "/counter-na-redux/index.html",
-    "static/css/main.3964a91b.chunk.css.map": "/counter-na-redux/static/css/main.3964a91b.chunk.css.map",
-    "static/js/2.f48e1be2.chunk.js.LICENSE.txt": "/counter-na-redux/static/js/2.f48e1be2.chunk.js.LICENSE.txt"
+    "static/css/main.4b791bfa.chunk.css.map": "/counter-na-redux/static/css/main.4b791bfa.chunk.css.map",
+    "static/js/2.5536bdaa.chunk.js.LICENSE.txt": "/counter-na-redux/static/js/2.5536bdaa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2de9086f.js",
-    "static/js/2.f48e1be2.chunk.js",
-    "static/css/main.3964a91b.chunk.css",
-    "static/js/main.c066f1a6.chunk.js"
+    "static/js/2.5536bdaa.chunk.js",
+    "static/css/main.4b791bfa.chunk.css",
+    "static/js/main.6ed773a6.chunk.js"
   ]
 }
