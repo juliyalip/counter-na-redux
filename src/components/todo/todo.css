@@ -1,0 +1,22 @@
+.containerTodo {
+  display: flex;
+  width: 320px;
+  border: 1px solid black;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.butTodo {
+  margin: 15px;
+}
+
+.todoItems {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  width: 350px;
+  border: 1px solid black;
+  padding: 10px;
+}
