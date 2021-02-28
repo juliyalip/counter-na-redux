@@ -3,10 +3,15 @@ import shortid from "shortid";
 
 import FormTodo from './FormTodo';
 import TodoList from './TodoList';
+import Filter from './Filter'
 
 
 export default class Todo extends Component {
-    state = {       todos: []    }
+    state = {
+        todos: [],
+        filter: ''
+    }
+
     
     addTodos = text => {
         const todo = {   id: shortid.generate(),
@@ -32,13 +37,33 @@ export default class Todo extends Component {
                     }
                     return todo;
                     // если не совпал, то вернули старый таск
-                })       }   })     } 
+                })
+            }
+        })
+    } 
+        
+    changeFilter = filter => {
+        this.setState({ filter })
+    };
 
-    render() {        const {todos} = this.state
+    getVisibleTodo = () => { // cоздание нового массива, его в state не храним. Текущий массив не изменяем !!!
+        const { todos, filter } = this.state;
+        return todos.filter(todo =>
+            todo.text.toLowerCase().includes(filter.toLowerCase()))
+    }
+
+    render()
+    {
+        const { todos } = this.state;
+        const visibleTodo = this.getVisibleTodo() // результат фильтрации
         return (            <>
-                <FormTodo onAddText={this.addTodos} />
+            <FormTodo onAddText={this.addTodos} />
+            
+            <Filter value={this.state.filter}
+                onChangeFilter={ this.changeFilter}/>
+            
                 {todos.length > 0 && (<TodoList
-                    items={todos}
+                    items={visibleTodo}
                     onDeleteTodo={this.deleteTodo}
                 onUpdateTodo={this.upDateTodo}
                 />)}
