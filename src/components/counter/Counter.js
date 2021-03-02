@@ -15,7 +15,7 @@ const Counter = ({ value, onIncrement, onDecrement, step }) => {
 
             <Value value={ value}/>
             <ButtonControls
-                onIncrement={() => onIncrement(step)}
+                onIncrement={() => onIncrement(step)} // через анонимку можем передать динамическое значение
                 onDecrement={() => onDecrement(step)}
                 step={step} />
         </div>
@@ -35,8 +35,8 @@ const mapStateToProps = state => {// написали функцию получ�
 const mapDispatchToProps = dispatch => {
     // возвращает объект с пропсами
     return {
-        onIncrement: () => dispatch(actions.increment(1)), // вызвать функцию и передать знач.
-        onDecrement: () => dispatch(actions.decrement(1)) // вызвать функцию и передать знач.
+        onIncrement: (value) => dispatch(actions.increment(value)), // вызвать функцию и передать знач.
+        onDecrement: (value) => dispatch(actions.decrement(value)) // вызвать функцию и передать знач.value для динамичю знач
     }
 }
 

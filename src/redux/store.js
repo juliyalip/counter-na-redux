@@ -1,6 +1,6 @@
 import { createStore} from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-
+import actionType from './counter-type'
 
 const initialState = {
     counter:{ 
@@ -17,7 +17,7 @@ const reduser = (state = initialState, action) => {
 
 
     switch (action.type) {
-        case 'counter/Increment':
+        case actionType.INCREMENT:
             return {
                 ...state, // распылим, чтоб ничего не потерять
                 counter: {
@@ -25,7 +25,7 @@ const reduser = (state = initialState, action) => {
                     value: state.counter.value + action.payload,
                 }
             }
-        case 'counter/Decrement':
+        case actionType.DECREMENT:
             return {
                  ...state, // распылим весь предыд. стейт, сохраним то что не относится к каунтеру
                 counter: {

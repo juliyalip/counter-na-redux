@@ -46,7 +46,8 @@ export default class Todo extends Component {
         this.setState({ filter })
     };
 
-    getVisibleTodo = () => { // cоздание нового массива, его в state не храним. Текущий массив не изменяем !!!
+    getVisibleTodo = () => {
+// cоздание нового массива, его в state не храним. Тек. массив не изменяем !!!
         const { todos, filter } = this.state;
         return todos.filter(todo =>
             todo.text.toLowerCase().includes(filter.toLowerCase()))
@@ -56,7 +57,10 @@ export default class Todo extends Component {
     {
         const { todos } = this.state;
         const visibleTodo = this.getVisibleTodo() // результат фильтрации
-        return (            <>
+
+
+        return (
+            <>
             <FormTodo onAddText={this.addTodos} />
             
             <Filter value={this.state.filter}

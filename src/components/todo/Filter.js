@@ -3,7 +3,8 @@ export default function Filter({value, onChangeFilter}) {
         <div> Поиск
             <input type="text"
                 value={value}
-                onChange={e => onChangeFilter(e.target.value)}  //сюда прийдет event
+                onChange={e => onChangeFilter(e.target.value)}
+                 //сюда прийдет event
             /> 
         </div>
     )

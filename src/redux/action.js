@@ -1,10 +1,12 @@
+import actionType from './counter-type'
+
 export const increment = value => ({
-    type: 'counter/Increment',
+    type: actionType.INCREMENT,
     payload: value
 });
 
 
 export const decrement = value => ({
-    type: 'counter/Decrement',
+    type: actionType.DECREMENT,
     payload: value
 })
